@@ -1,4 +1,4 @@
-* Nilima Mim simple portfolio
+# Nilima Mim simple portfolio
 
 **Project requirement:** 
 
