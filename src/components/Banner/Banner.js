@@ -5,14 +5,22 @@ const Banner = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse gap-x-32">
-          <img
+        <img
           data-aos="fade-left"
-            src="https://i.ibb.co/PZ2XcWD/transparent-bg-designify.png"
-            className="md:max-w-sm rounded-full shadow-2xl"
-          />
-        <div data-aos="fade-right" className="text-center">
+          src="https://i.ibb.co/PZ2XcWD/transparent-bg-designify.png"
+          className="md:max-w-sm rounded-full shadow-2xl"
+        />
+        <div data-aos="fade-right" className="md:text-left text-center">
           <h1 className="text-5xl font-bold">
-            <Typed strings={["I am Nilima Mim","I am Google advertising specialist"]} typeSpeed={50} backSpeed={50} loop />
+            <Typed
+              strings={[
+                "I am Nilima Mim",
+                "I am Google advertising specialist",
+              ]}
+              typeSpeed={50}
+              backSpeed={50}
+              loop
+            />
           </h1>
           <p className="py-6">
             Hello, my name is I work as a professional Freelancer. Google

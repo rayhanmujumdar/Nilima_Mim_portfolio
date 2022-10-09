@@ -3,7 +3,8 @@ import React from "react";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="footer items-center p-4 bg-neutral text-neutral-content md:flex-row flex-col md:gap-y-10 gap-y-3 justify-items-center">
+    <div className="bg-[#191D24]">
+        <footer className="footer container mx-auto items-center p-4 bg-neutral text-neutral-content md:flex-row flex-col md:gap-y-10 gap-y-3 justify-items-center">
       <div className="items-center grid-flow-col">
         <svg
           width="36"
@@ -39,6 +40,7 @@ const Footer = () => {
         </a>
       </div>
     </footer>
+    </div>
   );
 };
 

@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const navItem = <>
-        <li><a className='active:bg-gray-500'>Home</a></li>
-        <li><a className='active:bg-gray-500'>About</a></li>
-        <li><a className='active:bg-gray-500'>Service</a></li>
-        <li><a className='active:bg-gray-500'>Contact</a></li>
-        <li><a className='active:bg-gray-500'>Blogs</a></li>
+        <li><Link to='/' className='active:bg-gray-500'>Home</Link></li>
+        <li><Link to='/about' className='active:bg-gray-500'>About</Link></li>
+        <li><Link to='/service' className='active:bg-gray-500'>Service</Link></li>
+        <li><Link to='/contact' className='active:bg-gray-500'>Contact</Link></li>
+        <li><Link to='/blogs' className='active:bg-gray-500'>Blogs</Link></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -32,7 +33,7 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a href='/public/Resume-Nilima-Mim.pdf' className="btn btn-active" download>Download CV</a>
+    <a href='public/Resume-Nilima-Mim.pdf' className="btn btn-active" download>Download CV</a>
   </div>
 </div>
     );
