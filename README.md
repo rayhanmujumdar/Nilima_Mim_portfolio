@@ -16,15 +16,15 @@ Functional requirement:
 
 **website components:**
 
-- Header → routing from → [all components]
-- Banner  → [image, text, button]
-- About → simple introduction
+- Header → routing from → [all components] → done
+- Banner  → [image, text, button] → done
+- About → simple introduction → process
 - service → [image, service info, button] → btn click to more details
 - contact → her all contact info → [email, phone, contact form]
 - blogs → her latest blogs add(if he need to add)
-- footer → [social media link and name]
+- footer → [social media link and name] → done
 
-**Technology:**
+**Technology use:**
 
 - React → js library
 - Tailwind CSS → css framework
@@ -33,11 +33,22 @@ Functional requirement:
 - axios - data fetching
 - aos → animation library
 - emailjs
+- heroicon
+- font awesome
+- react-typed
+- react-particles-js
 - future added
 
-**Project setup:**
+**Service Schema:**
 
-**add Directory Name:**
+- id
+- service name
+- service details
+- skills → array
+- provide → array
+
+**Project setup to use vs code:**
+
 - Components → Add all components
 - Hooks
 - Utils
@@ -46,4 +57,4 @@ Functional requirement:
 
 GitHub Push LInk: https://github.com/rayhanmujumdar/Nilima_Mim_portfolio
 
-Deploy LInk:
+Deploy LInk:  [https://rococo-cucurucho-efb6a8.netlify.app/](https://rococo-cucurucho-efb6a8.netlify.app/)
