@@ -35,7 +35,7 @@ const About = () => {
               className="btn btn-active"
               download
             >
-              Download CV
+              Download Resume
             </a>
           </div>
         </div>
