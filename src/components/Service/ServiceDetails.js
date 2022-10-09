@@ -18,20 +18,20 @@ const ServiceDetails = () => {
     <div className="hero min-h-screen bg-base-200">
       <div className="container flex lg:gap-x-5 lg:flex-row flex-col bg-[#191D24] mx-auto rounded-md p-5">
         <div className="flex flex-col justify-center items-start gap-y-4">
-          <div>
+          <div data-aos="fade-down-right">
             <img
               src={service?.img}
               alt=""
               className="lg:max-w-3xl rounded-md"
             />
           </div>
-          <div className="max-w-3xl">
+          <div data-aos="fade-up" className="max-w-3xl">
             <h4 className="text-5xl my-3">
               {service?.serviceName?.toUpperCase()}
             </h4>
             <p>{service?.serviceDetails}</p>
           </div>
-          <div className="max-w-5xl">
+          <div data-aos="fade-up" className="max-w-5xl">
             <h1 className="text-5xl inline-block mb-4 before:w-full relative before:h-[5px] before:bg-red-500 before:absolute before:bottom-[-10px]">
                 Skills
             </h1>
@@ -44,7 +44,7 @@ const ServiceDetails = () => {
             })}
           </div>
         </div>
-        <div className="flex justify-start items-center flex-col">
+        <div  data-aos="fade-down-left" className="flex justify-start items-center flex-col">
           <div className="w-full">
             <h1 className="text-5xl inline-block mb-4 before:w-full relative before:h-[5px] before:bg-red-500 before:absolute before:bottom-[-10px]">
               Services

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
   return (
-    <div>
+    <div data-aos="flip-left">
       <div className="card lg:card-side bg-base-100 shadow-xl md:w-[1000px] mx-4">
         <figure>
           <img src={service.img} alt="Album" className="md:w-[500px] w-[350px] rounded-md"/>
