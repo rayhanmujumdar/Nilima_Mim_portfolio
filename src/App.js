@@ -8,6 +8,7 @@ import Banner from './components/Banner/Banner'
 import About from './components/About/About'
 import Service from './components/Service/Service'
 import NotFound from "./components/NotFound/NotFound";
+import ServiceDetails from "./components/Service/ServiceDetails";
 
 function App() {
   Aos.init();
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Banner></Banner>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/service" element={<Service></Service>}></Route>
+        <Route path="/service/:id" element={<ServiceDetails></ServiceDetails>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
