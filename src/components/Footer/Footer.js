@@ -24,13 +24,13 @@ const Footer = () => {
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a target='_blank' className="text-xl cursor-pointer">
-          <i class="fa-brands fa-facebook"></i>
+          <i className="fa-brands fa-facebook"></i>
         </a>
         <a target='_blank' className="text-xl cursor-pointer">
-          <i class="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-twitter"></i>
         </a>
         <a href="https://www.linkedin.com/in/nilimamim/" target='_blank' className="text-xl cursor-pointer">
-          <i class="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-linkedin"></i>
         </a>
         <a target='_blank' className="text-xl cursor-pointer">
           <p className=" bg-green-600 w-[30px] h-[30px] font-bold rounded-full text-md text-center">FI</p>

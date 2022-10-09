@@ -5,6 +5,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Banner from './components/Banner/Banner'
+import About from './components/About/About'
 import NotFound from "./components/NotFound/NotFound";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Banner></Banner>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
