@@ -1,8 +1,10 @@
 import React from "react";
 import Typed from "react-typed";
+// import Particles from 'react-particles-js';
 
 const Banner = () => {
   return (
+    // <Particles>
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse gap-x-32">
         <img
@@ -14,8 +16,8 @@ const Banner = () => {
           <h1 className="text-5xl font-bold">
             <Typed
               strings={[
-                "I am Nilima Mim",
-                "I am Google advertising specialist",
+                "Hi,I am Nilima Mim",
+                "Hi,I am Google advertising specialist",
               ]}
               typeSpeed={50}
               backSpeed={50}
@@ -29,13 +31,14 @@ const Banner = () => {
           </p>
           <div className="flex gap-x-5 justify-center md:justify-start">
             <button className="btn">UpWork</button>
-            <button className="btn bg-green-700 active:bg-green-900 hover:bg-green-800">
+            <button className="btn bg-green-600 active:bg-green-900 hover:bg-green-800">
               Fiverr
             </button>
           </div>
         </div>
       </div>
     </div>
+    // </Particles>
   );
 };
 

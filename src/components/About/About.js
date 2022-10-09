@@ -6,7 +6,7 @@ const About = () => {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row md:gap-x-16">
         <img
-        data-aos="fade-left"
+          data-aos="fade-left"
           src="https://i.ibb.co/PZ2XcWD/transparent-bg-designify.png"
           className="md:max-w-sm rounded-full shadow-lg"
         />
@@ -29,6 +29,15 @@ const About = () => {
             analytics. My goals are high quality, quick service, and good
             communication. Please knock on my door now.
           </p>
+          <div className="mt-4">
+            <a
+              href="public/Resume-Nilima-Mim.pdf"
+              className="btn btn-active"
+              download
+            >
+              Download CV
+            </a>
+          </div>
         </div>
       </div>
     </div>
