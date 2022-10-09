@@ -18,8 +18,8 @@ Functional requirement:
 
 - Header → routing from → [all components] → done
 - Banner  → [image, text, button] → done
-- About → simple introduction → process
-- service → [image, service info, button] → btn click to more details
+- About → simple introduction → done
+- service → [image, service info, button] → btn click to more details -> allmost done
 - contact → her all contact info → [email, phone, contact form]
 - blogs → her latest blogs add(if he need to add)
 - footer → [social media link and name] → done
