@@ -1,13 +1,16 @@
 import React from "react";
 import Typed from "react-typed";
+import Title from "../../utils/Title";
 // import Particles from 'react-particles-js';
 
 const Banner = () => {
   return (
     // <Particles>
     <div className="hero min-h-screen bg-base-200">
+      <Title title="Home"></Title>
       <div className="hero-content flex-col lg:flex-row-reverse gap-x-32">
         <img
+          alt="Nilima Pic"
           data-aos="fade-left"
           src="https://i.ibb.co/PZ2XcWD/transparent-bg-designify.png"
           className="md:max-w-sm rounded-full shadow-2xl"
@@ -30,10 +33,10 @@ const Banner = () => {
             Tag Manager expert.
           </p>
           <div className="flex gap-x-5 justify-center md:justify-start">
-            <button className="btn">UpWork</button>
-            <button className="btn bg-green-600 active:bg-green-900 hover:bg-green-800">
+            <a title="UpWork" href="https://www.upwork.com/freelancers/~014dde0a96a777a17b" target="__blank" className="btn">UpWork</a>
+            <a title="Fiverr" href="https://www.fiverr.com/nilimamim508?up_rollout=true" target="__blank" className="btn bg-green-600 active:bg-green-900 hover:bg-green-800">
               Fiverr
-            </button>
+            </a>
           </div>
         </div>
       </div>

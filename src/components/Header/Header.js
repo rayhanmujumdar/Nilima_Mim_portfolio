@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
+  const html = document.getElementsByTagName("html")[0];
+  const storeThemes = localStorage.getItem("themes");
+  const [hide, setHide] = useState(
+    storeThemes === "dark" || storeThemes === null ? false : true
+  );
+  const dark = () => {
+    localStorage.setItem("themes", "dark");
+    setHide(false);
+    const themes = localStorage.getItem("themes");
+    console.log(themes);
+    html.setAttribute("data-theme", themes);
+  };
+  const light = () => {
+    localStorage.setItem("themes", "light");
+    setHide(true);
+    const themes = localStorage.getItem("themes");
+    console.log(themes);
+    html.setAttribute("data-theme", themes);
+  };
+  html.setAttribute("data-theme", storeThemes);
   const navItem = (
     <>
       <li>
@@ -28,6 +49,19 @@ const Header = () => {
         <Link to="/blogs" className="active:bg-gray-500">
           Blogs
         </Link>
+      </li>
+      <li>
+        {hide ? (
+          <div onClick={dark} className="swap-on font-bold">
+            <MoonIcon className="h-3"></MoonIcon>
+            <span>Dark</span>
+          </div>
+        ) : (
+          <div onClick={light} className="swap-off font-bold">
+            <SunIcon className="h-3"></SunIcon>
+            <span>Light</span>
+          </div>
+        )}
       </li>
     </>
   );
@@ -58,17 +92,23 @@ const Header = () => {
             {navItem}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl md:block hidden">
-          Nilima MiM
-        </a>
-        <a className="btn btn-ghost normal-case text-xl md:hidden">Mim Akter</a>
+        <Link
+          to="/"
+          className="btn btn-ghost normal-case text-xl md:block hidden"
+        >
+          Nilima <span className="text-secondary text-2xl">MiM</span>
+        </Link>
+        <Link to="/" className="btn btn-ghost normal-case text-xl md:hidden">
+          <span className="text-secondary text-2xl">Mim</span>Akter
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{navItem}</ul>
       </div>
       <div className="navbar-end">
         <a
-          href="public/Resume-Nilima-Mim.pdf"
+          href="https://drive.google.com/file/d/18-yYDuh72bbnRsyKCWNyMD1GzOAJtTV5/view?usp=sharing"
+          target="__blank"
           className="btn btn-active"
           download
         >

@@ -16,7 +16,7 @@ const ServiceDetails = () => {
   console.log(service?.img);
   return (
     <div className="hero min-h-screen bg-base-200">
-      <div className="container flex lg:gap-x-5 lg:flex-row flex-col bg-[#191D24] mx-auto rounded-md p-5">
+      <div className="container flex lg:gap-x-5 lg:flex-row flex-col bg-[#191D24] items-start mx-auto rounded-md p-5 my-2 text-white">
         <div className="flex flex-col justify-center items-start gap-y-4">
           <div data-aos="fade-down-right">
             <img
@@ -31,7 +31,10 @@ const ServiceDetails = () => {
             </h4>
             <p>{service?.serviceDetails}</p>
           </div>
-          <div data-aos="fade-up" className="max-w-5xl">
+          
+        </div>
+        <div  data-aos="fade-down-left" className="flex justify-start lg:items-center flex-col">
+        <div data-aos="fade-up" className="max-w-5xl">
             <h1 className="text-5xl inline-block mb-4 before:w-full relative before:h-[5px] before:bg-red-500 before:absolute before:bottom-[-10px]">
                 Skills
             </h1>
@@ -43,8 +46,6 @@ const ServiceDetails = () => {
               );
             })}
           </div>
-        </div>
-        <div  data-aos="fade-down-left" className="flex justify-start items-center flex-col">
           <div className="w-full">
             <h1 className="text-5xl inline-block mb-4 before:w-full relative before:h-[5px] before:bg-red-500 before:absolute before:bottom-[-10px]">
               Services

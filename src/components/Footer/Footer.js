@@ -23,22 +23,33 @@ const Footer = () => {
           <p className="text-2xl text-center w-full">Nilima Akter Mim</p>
         </div>
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a target="_blank" className="text-xl cursor-pointer">
+          <a
+            title="Facebook"
+            href="http://facebook.com"
+            target="__blank"
+            className="text-xl cursor-pointer"
+          >
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a target="_blank"  href="https://twitter.com/nilima_mim" className="text-xl cursor-pointer">
+          <a
+            title="Twitter"
+            target="__blank"
+            href="https://twitter.com/nilima_mim"
+            className="text-xl cursor-pointer"
+          >
             <i className="fa-brands fa-twitter"></i>
           </a>
           <a
+            title="Linkedin"
             href="https://www.linkedin.com/in/nilimamim/"
-            target="_blank"
+            target="__blank"
             className="text-xl cursor-pointer"
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
           <a
-            rel="noreferrer"
-            target="_blank"
+            title="Fiverr"
+            target="__blank"
             href="https://www.fiverr.com/nilimamim508?up_rollout=true"
             className="text-xl cursor-pointer"
           >
@@ -46,7 +57,12 @@ const Footer = () => {
               FI
             </p>
           </a>
-          <a target="_blank" href="https://www.upwork.com/freelancers/~014dde0a96a777a17b" className="text-xl cursor-pointer">
+          <a
+            title="UpWork"
+            target="__blank"
+            href="https://www.upwork.com/freelancers/~014dde0a96a777a17b"
+            className="text-xl cursor-pointer"
+          >
             <p className=" bg-green-600 w-[30px] h-[30px] font-bold rounded-full text-md text-center">
               Up
             </p>

@@ -1,11 +1,14 @@
 import React from "react";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
+import Title from "../../utils/Title";
 
 const About = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
+      <Title title="About"></Title>
       <div className="hero-content flex-col lg:flex-row md:gap-x-16">
         <img
+          alt="nilima pic"
           data-aos="fade-left"
           src="https://i.ibb.co/PZ2XcWD/transparent-bg-designify.png"
           className="md:max-w-sm rounded-full shadow-lg"
@@ -31,7 +34,8 @@ const About = () => {
           </p>
           <div className="mt-4">
             <a
-              href="public/Resume-Nilima-Mim.pdf"
+              href="https://drive.google.com/file/d/18-yYDuh72bbnRsyKCWNyMD1GzOAJtTV5/view?usp=sharing"
+              target="__blank"
               className="btn btn-active"
               download
             >
