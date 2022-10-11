@@ -9,6 +9,7 @@ import About from './components/About/About'
 import Service from './components/Service/Service'
 import NotFound from "./components/NotFound/NotFound";
 import ServiceDetails from "./components/Service/ServiceDetails";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   Aos.init();
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/service" element={<Service></Service>}></Route>
         <Route path="/service/:id" element={<ServiceDetails></ServiceDetails>}></Route>
+        <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

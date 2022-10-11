@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
@@ -11,18 +11,14 @@ const Header = () => {
   const dark = () => {
     localStorage.setItem("themes", "dark");
     setHide(false);
-    const themes = localStorage.getItem("themes");
-    console.log(themes);
-    html.setAttribute("data-theme", themes);
   };
   const light = () => {
     localStorage.setItem("themes", "light");
     setHide(true);
-    const themes = localStorage.getItem("themes");
-    console.log(themes);
-    html.setAttribute("data-theme", themes);
   };
-  html.setAttribute("data-theme", storeThemes);
+  useEffect(() => {
+    html.setAttribute("data-theme", storeThemes);
+  }, [storeThemes]);
   const navItem = (
     <>
       <li>

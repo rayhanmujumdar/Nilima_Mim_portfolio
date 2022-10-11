@@ -16,7 +16,7 @@ const ServiceDetails = () => {
   console.log(service?.img);
   return (
     <div className="hero min-h-screen bg-base-200">
-      <div className="container flex lg:gap-x-5 lg:flex-row flex-col bg-[#191D24] items-start mx-auto rounded-md p-5 my-2 text-white">
+      <div className="container flex lg:gap-x-5 lg:flex-row flex-col bg-[#191D24] items-start mx-auto rounded-md p-5 my-2">
         <div className="flex flex-col justify-center items-start gap-y-4">
           <div data-aos="fade-down-right">
             <img
@@ -26,34 +26,34 @@ const ServiceDetails = () => {
             />
           </div>
           <div data-aos="fade-up" className="max-w-3xl">
-            <h4 className="text-5xl my-3">
+            <h4 className="text-5xl my-3 text-gray-300">
               {service?.serviceName?.toUpperCase()}
             </h4>
-            <p>{service?.serviceDetails}</p>
+            <p className="text-gray-300">{service?.serviceDetails}</p>
           </div>
           
         </div>
         <div  data-aos="fade-down-left" className="flex justify-start lg:items-center flex-col">
         <div data-aos="fade-up" className="max-w-5xl">
-            <h1 className="text-5xl inline-block mb-4 before:w-full relative before:h-[5px] before:bg-red-500 before:absolute before:bottom-[-10px]">
+            <h1 className="text-5xl inline-block mb-4 before:w-full relative before:h-[5px] text-gray-300 before:bg-red-500 before:absolute before:bottom-[-10px]">
                 Skills
             </h1>
             {service?.skills?.map((skill, index) => {
               return (
-                <p key={index} className="py-1 text-xl">
+                <p key={index} className="py-1 text-xl text-gray-300">
                   {index + 1}. {skill}
                 </p>
               );
             })}
           </div>
           <div className="w-full">
-            <h1 className="text-5xl inline-block mb-4 before:w-full relative before:h-[5px] before:bg-red-500 before:absolute before:bottom-[-10px]">
+            <h1 className="text-5xl inline-block mb-4 before:w-full relative before:h-[5px] text-gray-300 before:bg-red-500 before:absolute before:bottom-[-10px]">
               Services
             </h1>
             <div>
               {service?.myService?.map((service, index) => {
                 return (
-                  <p key={index} className="text-xl flex items-center gap-x-2 py-1.5">
+                  <p key={index} className="text-xl text-gray-300 flex items-center gap-x-2 py-1.5">
                     <span className="inline-block bg-green-700 rounded-full">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -37,6 +37,7 @@ Functional requirement:
 - font awesome
 - react-typed
 - react-particles-js
+- react-hook-form
 - future added
 
 **Service Schema:**

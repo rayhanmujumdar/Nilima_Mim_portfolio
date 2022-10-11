@@ -34,7 +34,7 @@ const Banner = () => {
           </p>
           <div className="flex gap-x-5 justify-center md:justify-start">
             <a title="UpWork" href="https://www.upwork.com/freelancers/~014dde0a96a777a17b" target="__blank" className="btn">UpWork</a>
-            <a title="Fiverr" href="https://www.fiverr.com/nilimamim508?up_rollout=true" target="__blank" className="btn bg-green-600 active:bg-green-900 hover:bg-green-800">
+            <a title="Fiverr" href="https://www.fiverr.com/nilimamim508" target="__blank" className="btn bg-green-600 active:bg-green-900 hover:bg-green-800">
               Fiverr
             </a>
           </div>

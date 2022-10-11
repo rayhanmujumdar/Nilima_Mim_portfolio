@@ -50,7 +50,7 @@ const Footer = () => {
           <a
             title="Fiverr"
             target="__blank"
-            href="https://www.fiverr.com/nilimamim508?up_rollout=true"
+            href="https://www.fiverr.com/nilimamim508"
             className="text-xl cursor-pointer"
           >
             <p className=" bg-green-600 w-[30px] h-[30px] font-bold rounded-full text-md text-center">
