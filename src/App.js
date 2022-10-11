@@ -10,6 +10,8 @@ import Service from './components/Service/Service'
 import NotFound from "./components/NotFound/NotFound";
 import ServiceDetails from "./components/Service/ServiceDetails";
 import Contact from "./components/Contact/Contact";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   Aos.init();
@@ -24,6 +26,20 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <ToastContainer
+       position="top-right"
+       autoClose={3000}
+       limit={1}
+       hideProgressBar={false}
+       newestOnTop={true}
+       closeOnClick={true}
+       rtl={false}
+       pauseOnFocusLoss
+       draggable
+       pauseOnHover
+       theme="dark"
+       
+       />
       <Footer></Footer>
     </div>
   );

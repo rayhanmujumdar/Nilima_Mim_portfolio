@@ -1,26 +1,44 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Title from '../../utils/Title'
 import { EnvelopeIcon,PhoneIcon,MapPinIcon } from '@heroicons/react/24/solid'
+import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data)
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE,
+      process.env.TEMPLATE,
+      {data},
+      process.env.PUBLIC_KEY
+    ).then((result) => {
+      console.log(result)
+      toast.success('Email Send')
+      reset()
+    },(error) => {
+      console.log(error)
+    }).catch(err => {
+      console.log(err.message)
+    })
   };
   return (
     <div className="hero min-h-screen bg-base-200">
+      <Title title="Contact"></Title>
       <div className="hero-content flex-col lg:flex-row lg:gap-x-10 w-full">
         <div className="text-center lg:text-left w-full">
           <h1 className="text-4xl font-bold before:min-w-full md:block inline-block before:h-0.5 before:bg-gray-400 relative before:absolute before:bottom-[-5px]">Contact Info</h1>
           <div className="mt-3">
             <div className="flex gap-x-2 items-center my-2">
                 <EnvelopeIcon className="h-6 w-6 text-success"></EnvelopeIcon>
-                <p className="text-xl">nilimaakterm730@gmail.com</p>
+                <a href="mailto:nilimaakterm730@gmail.com" target="__blank" className="text-xl">nilimaakterm730@gmail.com</a>
             </div>
             <div className="flex gap-x-2 items-center my-2">
                 <PhoneIcon className="h-6 w-6 text-success"></PhoneIcon>
