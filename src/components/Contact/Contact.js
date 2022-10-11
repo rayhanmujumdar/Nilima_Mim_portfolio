@@ -82,7 +82,7 @@ const Contact = () => {
               className="flex gap-x-2 items-center my-2"
             >
               <MapPinIcon className="h-6 w-6 text-success"></MapPinIcon>
-              <p className="text-xl">Uttara, Dhaka</p>
+              <p className="text-xl">Bangladesh</p>
             </div>
           </div>
         </div>
