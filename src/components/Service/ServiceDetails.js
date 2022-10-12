@@ -6,14 +6,12 @@ const ServiceDetails = () => {
   const { id } = useParams();
   const [service, setService] = useState({});
   const [serviceData] = useServiceData();
-  console.log(serviceData);
   useEffect(() => {
     const data = serviceData.find((item) => {
       return item._id === id;
     });
     setService(data);
   }, [id, serviceData]);
-  console.log(service?.img);
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="container flex lg:gap-x-5 lg:flex-row flex-col bg-[#191D24] items-start mx-auto rounded-md p-5 my-2">
