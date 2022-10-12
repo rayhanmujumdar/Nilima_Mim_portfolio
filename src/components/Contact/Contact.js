@@ -174,9 +174,7 @@ const Contact = () => {
                 <p className="text-red-500 pt-1">{errors.message.message}</p>
               )}
             </div>
-            <div data-aos="fade-left"
-          data-aos-delay="80"
-          data-aos-duration="1600" className="form-control mt-6">
+            <div className="form-control mt-6">
               <button type="submit" className="btn btn-primary">
                 Send Mail
               </button>
